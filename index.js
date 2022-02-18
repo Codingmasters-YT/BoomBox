@@ -22,13 +22,6 @@ const client = new discord.Client({ disableMentions:'everyone' });
 
 const { Player } = require('discord-player');
 
-
-
-client.on('ready', () => {
-  console.log('Your Bot is now Online.')
-  setInterval(() => console.log("hi"), 60000)
-})
-
 const player = new Player(client);
 client.player = player;
 client.config = require('./config/bot.json');
