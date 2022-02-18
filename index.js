@@ -3,7 +3,7 @@ const app = express();
 const Discord = require('discord.js')
 const keepAlive = require("./server")
 // require("dotenv").config();
-var token = process.env['BOT_TOKEN']
+var token = process.env.BOT_TOKEN
 
 // console.log(process.env.BOT_TOKEN)
 app.listen(() => console.log("Boombox"));
